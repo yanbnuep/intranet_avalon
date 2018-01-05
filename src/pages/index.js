@@ -32,11 +32,11 @@ avalon.define({
     $id: 'newsSlideShow',
     config: {
         slideItems: [
-            { 'link': '', 'imgPath': '../../mock/600-425fan.jpg' },
-            { 'link': '', 'imgPath': '../../mock/AIRMACAU_annual_dinner-186_.jpg' },
-            { 'link': '', 'imgPath': '../../mock/cadet.jpg' },
-            { 'link': '', 'imgPath': '../../mock/10.jpg' },
-            { 'link': '', 'imgPath': '../../mock/taifeng 600-425.jpg' }
+            { 'link': '', 'imgPath': '../../mock/600-425fan.jpg','title':'Soliciting You Typhoon Memory of This Summer' },
+            { 'link': '', 'imgPath': '../../mock/AIRMACAU_annual_dinner-186_.jpg','title':'Air Macau Success fully Held South America Roadshow' },
+            { 'link': '', 'imgPath': '../../mock/cadet.jpg' ,'title':'5th Macao International Travel (Industry) Expo'},
+            { 'link': '', 'imgPath': '../../mock/10.jpg','title':'Air Macau Provide High Quality Service to Taifung Bank' },
+            { 'link': '', 'imgPath': '../../mock/taifeng 600-425.jpg','title':'Protect the Alternate Flights' }
 
         ]
     }

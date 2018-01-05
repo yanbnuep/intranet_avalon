@@ -1,7 +1,6 @@
 {
   "name": "intranet",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +8,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^3.5.2",
     "avalon2": "~2.2.7",
     "blazy": "^1.8.2",
     "css-loader": "~0.8.0",
@@ -24,5 +24,14 @@
   "devDependencies": {
     "webpack": "^1.15.0",
     "webpack-dev-server": "^1.9.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanbnuep/intranet_avalon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yanbnuep/intranet_avalon/issues"
+  },
+  "homepage": "https://github.com/yanbnuep/intranet_avalon#readme",
+  "description": ""
 }

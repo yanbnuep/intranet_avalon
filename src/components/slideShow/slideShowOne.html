@@ -1,12 +1,17 @@
 <div class="slideShow">
-	<ul class="slideItems" :css="{width:@container_width}">
-		<li class="item" ms-for="(index,item) in @slideItems" :css="{width:@image_width}">
+	<ul class="slideItems">
+		<li class="item"  ms-for="($index,item) in @slideItems" :css="{width:@image_width}" :class="{cur: $index === @cur}">
 			<a class="link" ms-attr="{href:@item.link}">
+				<div class="text_area animated fadeIn">
+					<h3 class="title">
+						{{@item.title}}
+					</h3>
+				</div>
 				<img class="b-lazy" ms-attr="{'src':@item.imgPath}"/>
 			</a>
 		</li>
 	</ul>
-	<ul class="dots">
-		<li class="nav_dot" ms-for="(index,item) in @container_width"></li>
+	<ul class="control-dots clearfix">
+		<li class="dot" :class="{cur: $index === @cur}" ms-for="($index,item) in @slideItems" ms-click="@jump($index)"></li>
 	</ul>
 </div>
