@@ -1,0 +1,11 @@
+<div class="header clearfix" >
+    <div class="banner"><img ms-attr="{background: 'url('+@banner.link + ') no-repeat center center;'}" /></div>
+    <ul class="iconList" ms-for="(index,item) in @iconList">
+        <li class="item">
+            <a ms-attr='{href:@item.link}' class="link  payne-s-grey-font">
+            	<i class="material-icons">{{item.icon}}</i>
+            	<span>{{item.name}}</span>
+            </a>
+        </li>
+    </ul>
+</div>

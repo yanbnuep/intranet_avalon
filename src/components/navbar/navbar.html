@@ -1,0 +1,7 @@
+<div class="navbar pure-menu pure-menu-horizontal">
+    <ul class="navList clearfix pure-menu-list">
+        <li class="item pure-menu-item " ms-for="(index,item) in @navList" ms-hover="@hoverClass">
+            <a class="pure-menu-link" ms-attr='{href:@item.link}' class="link">{{item.name}}</a>
+        </li>
+    </ul>
+</div>

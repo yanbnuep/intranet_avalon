@@ -1,0 +1,12 @@
+<div class="slideShow">
+	<ul class="slideItems" :css="{width:@container_width}">
+		<li class="item" ms-for="(index,item) in @slideItems" :css="{width:@image_width}">
+			<a class="link" ms-attr="{href:@item.link}">
+				<img class="b-lazy" ms-attr="{'src':@item.imgPath}"/>
+			</a>
+		</li>
+	</ul>
+	<ul class="dots">
+		<li class="nav_dot" ms-for="(index,item) in @container_width"></li>
+	</ul>
+</div>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Intraent</title>
+    <!-- saved from url=(0014)about:internet -->
+    <!--[if lt IE 9]>
+		<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+		<![endif]-->
+    <script src="../dist/bundle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <!--[if lte IE 8]>
+    	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+
+	<![endif]-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <div ms-controller="header">
+            <wbr ms-widget="[{is:'ms-header'},@config]" />
+        </div>
+        <div ms-controller="index">
+            <wbr ms-widget="[{is:'ms-navbar'},@config]" />
+        </div>
+        <div class="news" style="position: relative;width: 100%">
+            <div ms-controller="newsSlideShow">
+                <wbr ms-widget="[{is:'ms-slideShow'},@config]" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
